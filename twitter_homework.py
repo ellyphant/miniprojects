@@ -1,5 +1,5 @@
 """
-This is my first homework assignment to get familiar with querying
+This is my first mini project to get familiar with querying
 public API's, in this case, Twitter.
 """
 import twitter
