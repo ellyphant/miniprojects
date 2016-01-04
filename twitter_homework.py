@@ -3,14 +3,15 @@ This is my first mini project to get familiar with querying
 public API's, in this case, Twitter.
 """
 import twitter
+import config
 
 # Were using a twitter api python wrapper that requires a few keys that
 # we received after registering an app with twitter
 API = twitter.Api(\
-    consumer_key='9wtO1ZhampSa4sOD9b0A6AzmM',
-    consumer_secret='i2Iz8VMzrLflFGRccTnJC2LgVXvOtUbZvbkqMfo76ggqVrCFUJ',
-    access_token_key='339471595-KxgpkMq91k3eEBI3393tjbMuo7h6Jc2LgDCFXWVr',
-    access_token_secret='YuiKOg9PJ86fxEeAGEc7RNz7dzpp8igSUJWu9XEVMsdUU')
+    consumer_key=config.CONSUMER_KEY,
+    consumer_secret=config.CONSUMER_SECRET,
+    access_token_key=config.ACCESS_TOKEN_KEY,
+    access_token_secret=config.ACCESS_TOKEN_SECRET)
 
 def tentweets(search_term):
     """ Returns the most recent ten tweets with the searched term."""

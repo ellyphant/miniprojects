@@ -10,4 +10,5 @@ def test_tentweets():
     testberkeley = [x.lower() for x in testberkeley]
     assert '#berkeley' in testberkeley[0]
 
-
+if __name__ == "__main__":
+    test_tentweets()
